@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Student {
-    private String name;
-    private String surname;
-    private String patronymic;
-    private List<Integer> scores;
+    public String name;
+    public String surname;
+    public String patronymic;
+    public List<Integer> score;
 
     public Student(String name, String surname, String patronymic, List<Integer> scores) {
         this.name = name;
         this.surname = surname;
         this.patronymic = patronymic;
-        this.scores = scores;
+        this.score = scores;
     }
 
     public String getName() {
@@ -41,19 +41,19 @@ class Student {
     }
 
     public List<Integer> getScores() {
-        return scores;
+        return score;
     }
 
     public void setScores(List<Integer> scores) {
-        this.scores = scores;
+        this.score = scores;
     }
 
     public double calculateAverageScore() {
         int sum = 0;
-        for (int score : scores) {
+        for (int score : score) {
             sum += score;
         }
-        return (double) sum / scores.size();
+        return (double) sum / score.size();
     }
 }
 
