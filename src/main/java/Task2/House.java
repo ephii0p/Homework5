@@ -13,12 +13,12 @@ public class House {
         residents.put("Иванов Иван Иванович", 25);
         residents.put("Петров Петр Петрович", 17);
         residents.put("Владимиров Владимир Владимирович", 30);
-        residents.put("Николаев Николай Николаевич", 21);
+        residents.put("Николаев Николай Николаевич", 18);
         residents.put("Сергеев Сергей Сергеевич", 16);
 
        List<String> adultResidents = new ArrayList<>();
         for (Map.Entry<String, Integer> entry : residents.entrySet()) {
-            if (entry.getValue() > 18) {
+            if (entry.getValue() >= 18) {
                 adultResidents.add(entry.getKey());
             }
         }

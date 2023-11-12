@@ -17,26 +17,32 @@ class Student {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public String getSurname() {
+
         return surname;
     }
 
     public void setSurname(String surname) {
+
         this.surname = surname;
     }
 
     public String getPatronymic() {
+
         return patronymic;
     }
 
     public void setPatronymic(String patronymic) {
+
         this.patronymic = patronymic;
     }
 
@@ -60,9 +66,9 @@ class Student {
 public class Main {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-        students.add(new Student("Иван", "Иванов", "Иванович", List.of(80, 70, 90)));
-        students.add(new Student("Петр", "Петров", "Петрович", List.of(85, 75, 95)));
-        students.add(new Student("Сидор", "Сидоров", "Сидорович", List.of(90, 85, 100)));
+        students.add(new Student("Иван", "Иванов", "Иванович", List.of(77, 60, 90)));
+        students.add(new Student("Петр", "Петров", "Петрович", List.of(89, 57, 96)));
+        students.add(new Student("Сидор", "Сидоров", "Сидорович", List.of(10, 45, 90)));
 
         printWinners(findWinners(students));
     }

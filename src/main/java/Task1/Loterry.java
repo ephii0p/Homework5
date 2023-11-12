@@ -5,13 +5,12 @@ import java.util.Arrays;
 public class Loterry {
 
     public static void main(String[] args) {
-        // Создаем массив и заполняем его 100 числовыми значениями
+
         int[] balls = new int[100];
         for (int i = 0; i < 100; i++) {
             balls[i] = i + 1;
         }
 
-        // Перемешиваем массив
         shuffleArray(balls);
 
         // Выводим первые 10 значений в консоль
