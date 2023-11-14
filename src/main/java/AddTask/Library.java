@@ -1,6 +1,5 @@
 package AddTask;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Library {
@@ -61,7 +60,6 @@ public class Library {
                     String authorToSearch = scanner.nextLine();
                     catalog.searchByAuthor(authorToSearch);
                     break;
-
                 case 6:
                     System.out.println("Завершение работы программы.");
                     System.exit(0);
@@ -72,7 +70,7 @@ public class Library {
             if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
                 if (choice < 1 || choice > 6) {
-                    System.out.println("Неверная команда. Повторите ввод.");
+                    System.out.println(" ");
                 }
             } else {
                 System.out.println("Ошибка: введите число от 1 до 6");
