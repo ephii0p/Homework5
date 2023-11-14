@@ -14,7 +14,7 @@ class Book {
 
     public Book(int id, String bookName, String genre, String authorName, int year, String description) {
         if (uniquenessId.contains(id)) {
-            System.out.println("ID " + id + " уже существует");
+            System.out.println("ВНИМЕНИЕ!!!");
         } else {
             this.id = id;
             uniquenessId.add(id);
