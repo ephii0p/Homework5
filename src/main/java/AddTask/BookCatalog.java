@@ -40,13 +40,6 @@ public class BookCatalog {
         printBooks(result);
     }
 
-    public void searchByYear(int year) {
-        List<Book> result = books.stream()
-                .filter(book -> book.getYear() == year)
-                .collect(Collectors.toList());
-        printBooks(result);
-    }
-
     private void printBooks(List<Book> books) {
         for (Book book : books) {
             System.out.println(book.getId() + ": " + book.getBookName() + " - " + book.getAuthorName());
